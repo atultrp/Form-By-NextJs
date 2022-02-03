@@ -45,7 +45,7 @@ const Form = () => {
                                     message: "Your first name should be less than 20 characters!",
                                 },
                                 pattern: {
-                                    value:  /^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$/,
+                                    value: /^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$/,
                                     message: "Please Enter only characters!"
                                 }
                             })} placeholder="Firstname" autoComplete="off"  className="px-4 py-2 bg-gray-50" 
@@ -139,7 +139,7 @@ const Form = () => {
                                     message: "Please enter only amount!"
                                 },
                                 
-                            })} placeholder="Current Balance" autoComplete="off" className="px-4 py-2 bg-gray-50" />
+                            })} placeholder="$ Current Balance" autoComplete="off" className="px-4 py-2 bg-gray-50" />
                             <div className="text-red-400 text-sm py-2">
                                 {errors?.balance?.message}
                             </div>
